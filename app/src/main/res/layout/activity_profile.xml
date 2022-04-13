@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile"
+    android:layout_margin="20dp">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffff"
+        app:srcCompat="@drawable/logoo" />
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome : "
+        android:layout_margin="30dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Start your Quiz"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="logout"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Delete Account"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

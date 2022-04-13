@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz1"
+    android:layout_margin="20dp">
+
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/ic_profile_foreground" />
+
+    <ImageView
+        android:id="@+id/Q1Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/q4" />
+        <TextView
+            android:id="@+id/Question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="A cette intersection, je laisse la priorité a droite" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Q1True"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oui" />
+
+            <RadioButton
+                android:id="@+id/Q1False"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non" />
+
+        </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/NextQ1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="#7A7A7A"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

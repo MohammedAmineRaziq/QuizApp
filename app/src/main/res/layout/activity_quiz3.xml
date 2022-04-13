@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz3"
+    android:layout_margin="20dp">
+
+
+    <ImageView
+        android:id="@+id/Q3image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/q3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="#ffff">
+
+    <TextView
+        android:id="@+id/Question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="En tant qu'automibiliste, vous devez etre plus vigilant lorsque:" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/Q3True"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Le tramway est arrete" />
+
+        <RadioButton
+            android:id="@+id/Q3False"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Le tramway circule" />
+    </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/NextQ3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="center"
+        android:backgroundTint="#808080"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>

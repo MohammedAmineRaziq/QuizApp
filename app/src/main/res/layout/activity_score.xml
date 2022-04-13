@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Score"
+    android:layout_margin="20dp">
+
+
+
+    <TextView
+        android:id="@+id/ScoretextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR SCORE IS :"
+        android:textStyle="bold"
+        android:autoSizeMaxTextSize="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginVertical="50dp"/>
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/progress_bar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:arc_bottom_text="Score"
+        app:arc_unfinished_color="#D3D3D3"
+        app:arc_finished_color="#0066FF"
+        app:arc_bottom_text_size="35dp"
+        app:arc_progress="55"
+        app:arc_stroke_width="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="30dp">
+
+        <Button
+            android:id="@+id/Restart"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:width="150dp"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"
+            android:text="TRY AGAIN"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/Logout"
+            android:layout_width="wrap_content"
+            android:width="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F44336"
+            android:text="LOGOUT" />
+    </LinearLayout>
+</LinearLayout>
